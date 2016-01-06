@@ -34,11 +34,11 @@ module.exports = function SignUpModule(pb) {
 
     var contentService = new pb.ContentService();
     contentService.getSettings(function(err, contentSettings) {
-      if(!contentSettings.allow_comments) {
+     /* if(!contentSettings.allow_comments) {
         self.redirect('/', cb);
         return;
       }
-
+*/
       self.gatherData(function(err, data) {
         self.ts.registerLocal('navigation', new pb.TemplateValue(data.nav.navigation, false));
         self.ts.registerLocal('account_buttons', new pb.TemplateValue(data.nav.accountButtons, false));
