@@ -103,7 +103,8 @@ module.exports = function LocalizationModule(pb) {
         //get i18n from storage
         var loc = Localization.storage[this.language];
         if (util.isNullOrUndefined(loc)) {
-            throw new Error("Failed to set a language. LANG="+util.inspect(this.language));
+            //throw new Error("Failed to set a language. LANG="+util.inspect(this.language));
+            loc = Localization.storage['en-us']
         }
         for (var key in loc.generic) {
             text = text.split('^loc_' + key + '^').join(loc.generic[key]);
