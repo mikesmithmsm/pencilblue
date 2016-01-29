@@ -56,12 +56,14 @@ angular.module('pencilblueApp', ['validation', 'password'])
 
     $http.post(postURL, $scope.user)
     .success(function(result) {
+      delete $scope.errorMessage
       $scope.successMessage = result.message;
       $scope.saving = false;
       $scope.user = {};
       $scope.formSubmitted = false;
     })
     .error(function(error, status) {
+      delete $scope.successMessage
       $scope.errorMessage = error.message;
       $scope.saving = false;
     });

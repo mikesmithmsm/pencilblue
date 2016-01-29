@@ -10,7 +10,8 @@
                 <td><a href="#" ng-click="confirmVerification(user)"><i class="fa fa-check"></i></a></td>
                 <td ng-bind="user.username"></td>
                 <td ng-bind="user.first_name + ' ' + user.last_name"></td>
-                <td ng-bind="user.email"></td>
+                <td ng-bind="user.first_name + ' ' + user.last_name"></td>
+                <td ng-bind="user.parent_of"></td>
                 <td ng-bind="user.created | date: 'yyyy-MM-dd HH:mm'"></td>
                 <td><a href="#" ng-click="confirmDelete(user)"><i class="fa fa-trash"></i></a></td>
             </tr>

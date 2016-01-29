@@ -2,7 +2,7 @@
     body
     {
         background-color: #FFFFFF;
-        font-family: 'Helvetica', 'Arial', 'Verdana', sans-serif;
+        font-family: 'Verdana', 'Arial', sans-serif;
     }
 
     h1, h2, h3, h4, h5, h6
@@ -30,7 +30,9 @@
     .pb_header
     {
         padding: .5em;
-        border: none
+        padding-bottom: 30px;
+        border: none;
+        font-size: 30px;
     }
 
     .pb_box
@@ -44,14 +46,14 @@
     .pb_lead
     {
         font-size: 1.125em;
-        margin: .5em 0;
+        margin: 20px 0;
     }
 
     .pb_fade
     {
         margin: 0;
         color: #666666;
-        text-align: center;
+        padding-bottom: 10px;
     }
 
     .pb_button_holder
@@ -75,26 +77,35 @@
     {
         background-color: #00AAD4;
     }
+
+    .logo
+    {
+        width: 50px;
+        float: left;
+        padding-top: 5px;
+    }
+
+    .header
+    {
+        float: left;
+        margin-left: 5px;
+        font-weight: bold;
+    }
 </style>
 
 <table class="pb_container">
     <tr>
         <td class="pb_header">
-            <img src="http://localhost:8080/img/pb_logo.png"></img>
+            <img class="logo" src="http://www.brooksidepreschool.co.uk/media/2015/10/ca2468f9-cfc8-4b27-b64d-7c4c2d0bdd53-1444333086407.gif"></img>
+            <span class="header">Brookside Pre School</span>
         </td>
     </tr>
     <tr>
         <td class="pb_box">
             <h2>Hi ^first_name^ ^last_name^,</h2>
-            <p class="pb_lead">Your account is ready to activate. All you need to do is click the button below to verify your email address.</h5>
-            <a href="^verification_url^">
-                <p class="pb_button_holder">
-                    <span class="pb_button">
-                        Verify your email
-                    </span>
-                </p>
-            </a>
-            <p class="pb_fade">If you didn't create a pencilblue account, just delete this email.</p>
+            <p class="pb_lead">Your account will need to be authorised by a member staff</h5>
+            <p class="pb_fade">We take your childs privacy seriously and manually approve all user requests.</h5>
+            <p class="pb_fade">If you didn't create an account, just delete this email.</p>
         </td>
     </tr>
 </table>

@@ -117,7 +117,7 @@ module.exports = function SignUpModule(pb) {
   };
 
   SignUp.prototype.getRequiredFields = function() {
-    return ['username', 'email', 'password', 'confirm_password'];
+    return ['username', 'email', 'password', 'confirm_password', 'parent_of'];
   };
 
   SignUp.prototype.validateUniques = function(user, cb) {
